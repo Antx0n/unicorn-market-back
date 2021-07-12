@@ -7,14 +7,16 @@ import javax.persistence.Id;
 public class Unicorn {
 	
 	
-	public Unicorn(String name, String color, Integer basePrice) {
+	public Unicorn(String name, String description, String color, Integer basePrice) {
 		this.name = name;
+		this.description = description;
 		this.color = color;
 		this.basePrice = basePrice;
 	}
 	
 	@Id
 	private String name;
+	private String description;
 	private String color;
 	private Integer basePrice;
 
@@ -24,6 +26,12 @@ public class Unicorn {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
 	}
 	public String getColor() {
 		return color;
