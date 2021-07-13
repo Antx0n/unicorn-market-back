@@ -14,15 +14,16 @@ import com.antxon.services.PricingService;
 
 @RestController
 @CrossOrigin
-@RequestMapping(path ="api/v1/market")
+@RequestMapping(path = "api/v1/market")
 public class MarketController {
 
 	@Autowired
 	PricingService pricingService;
-	
-	@GetMapping(value ="/price")
+
+	@GetMapping(value = "/price")
 	@ResponseBody
-	public ResponseEntity<Integer> getMarketPrice(@RequestParam String uniName) {		
-		return new ResponseEntity<>(Math.abs(pricingService.getPrice(uniName).intValue()), new HttpHeaders(), HttpStatus.OK);
+	public ResponseEntity<Integer> getMarketPrice(@RequestParam String uniName) {
+		return new ResponseEntity<>(Math.abs(pricingService.getPrice(uniName).intValue()), new HttpHeaders(),
+				HttpStatus.OK);
 	}
 }
