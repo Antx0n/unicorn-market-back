@@ -12,5 +12,5 @@ INSERT INTO unicorn (name, description, color) VALUES
 ('Jasper', 'A unicorn that can pass through walls', 'White'),
 ('Prancer', 'A unicorn that cannot help doing pranks', 'Orange'),
 ('Willow', 'A unicorn that loves surfing in Malibu', 'Yellow'),
-('OzzyOz', 'A hard rocking unicorn', 'Black'),
+('OzzyOz', 'A hard rocking unicorn', 'Green'),
 ('Slayer', 'A fan of Game of Thrones', 'Blue');
